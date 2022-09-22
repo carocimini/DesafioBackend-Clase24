@@ -3,13 +3,10 @@ const handlebars = require('express-handlebars')
 
 const express =require('express')
 
-const { optionsMdb } = require("./mariaDB/connection")
 const { optionsSqlite } = require("./sqlite3/connection")
 
-const knexMariaDB = require("knex")(optionsMdb)
 const knexSqlite3 = require("knex")(optionsSqlite)
 
-const contenedor = new Contenedor(knexMariaDB, "productos")
 const mensajes = new Contenedor(knexSqlite3, "mensajes")
 
 const {Server: HttpServer} = require ('http')
