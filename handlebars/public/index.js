@@ -4,22 +4,26 @@ const render = (buzonChat) => {
     let chat = document.querySelector('#chat')
     let html = buzonChat.map(mesj => {
         return `<li>
-        <strong style="color:blue">${mesj.mail}</strong>
-        [<span style="color:brown">${mesj.fecha}</span>]:
-        <em style="color:green">${mesj.mensaje}</em>  
+        <strong style="color:blue">${mesj.author}</strong>
+        <em style="color:green">${mesj.text}</em>  
         </li>`
     })
     chat.innerHTML = html.join('')
 }
 
 const addMessage = (evt) => {
-    const mail = document.querySelector('#mail').value
-    let hora = new Date().toLocaleTimeString()
-    let dia = new Date().toLocaleDateString()
-    let fecha = `${dia} ${hora}`
-    const mensaje = document.querySelector('#mensaje').value
+    const id = document.querySelector('#mail').value
+    const nombre = document.querySelector("#nombre").value;
+	const apellido = document.querySelector("#apellido").value;
+	const edad = document.querySelector("#edad").value;
+	const alias = document.querySelector("#alias").value;
+	const avatar = document.querySelector("#avatar").value
+    const text = document.querySelector('#text').value
 
-    const chatString = {mail, fecha, mensaje}
+    const chatString = {
+        author: {id, nombre, apellido, edad, alias, avatar}, 
+        text
+    }
     //console.log(chatString)
     server.emit('mensaje-nuevo', chatString, id => {
         console.log(id)
