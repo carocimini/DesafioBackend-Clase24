@@ -1,1 +1,9 @@
-[]
+[
+    {"author": "caro.cimini@gmail.com", "text": "probando"},
+    {"author": "rami.cimini@gmail.com", "text": "hola, quiero saber formas de envio"},
+    {"author": "monicalcoderch@gmail.com", "text": "hola, quiero realizar un cambio"},
+    {"author": "nico.cimini@yahoo.com", "text": "hola, hacen venta mayorista"},
+    {
+        "author": "cesar.cimini@yahoo.com", 
+        "text": "hola, no puedo realizar pagos"}
+]

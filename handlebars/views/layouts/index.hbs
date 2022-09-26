@@ -22,38 +22,36 @@
                 <br>
             </div>
             <br>
-            <h2>Catálogo de Productos</h2>
-            <br>
-            {{#if exist}}
-                <div class="d-flex p-2 bd-highlight flex-wrap">
-                    {{#each list}}
-                        <div class="card " style="width: 10rem; margin: 1rem">
-                            <img src="{{thumbnail}}" class="card-img-top" alt="{{thumbnail}}">
-                            <div class="card-body">
-                                <h6 class="card-title">{{titulo}}</h6>
-                                <p class="card-text">$ {{precio}}</p>
-                            </div>
-                        </div>
-                    {{/each}}
-                </div>
-                {{else}}
-                    <div class="col d-flex flex-column align-items-center">
-                        <br>
-                        <h3>No hay productos en Stock</h3>
-                        <br>
-                    </div>    
-            {{/if}}
-        </div>
     </div>
     <br>
     <div class="container" style="background-color: grey">
         <br>
-        <h2 style="color:blue">Centro de Mensajes</h2>
+        <h2 style="color:blue">Centro de Mensajes <br> (Compresión: 79%)</h2>
 
         <form onsubmit="return addMessage(this)" class="mt-6">
             <div class="form-group col-5" style="margin-left: 10px;">
                 <label for="mail"></label>
                 <input required="required" type="email" class="form-control col-4" id="mail" placeholder="Ingresa tu email">
+            </div>
+            <div class="form-group col-5" style="margin-left: 10px;">
+                <label for="msj"></label>
+                <input required="required" type="text" class="form-control col-4" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group col-5" style="margin-left: 10px;">
+                <label for="msj"></label>
+                <input required="required" type="text" class="form-control col-4" id="apellido" placeholder="Ingresa tu apellido">
+            </div>
+            <div class="form-group col-5" style="margin-left: 10px;">
+                <label for="msj"></label>
+                <input required="required" type="number" class="form-control col-4" id="edad" placeholder="Ingresa tu edad">
+            </div>
+            <div class="form-group col-5" style="margin-left: 10px;">
+                <label for="msj"></label>
+                <input required="required" type="text" class="form-control col-4" id="alias" placeholder="Ingresa tu alias">
+            </div>
+            <div class="form-group col-5" style="margin-left: 10px;">
+                <label for="msj"></label>
+                <input required="required" type="text" class="form-control col-4" id="avatar" placeholder="Ingresa tu avatar">
             </div>
             <br>
             <ul id="chat"></ul>
@@ -61,7 +59,7 @@
                 <div class="row">
                     <div class="col-4">
                         <div class="form-group">
-                            <label for="mensaje"></label>
+                            <label for="text"></label>
                             <input required="required" type="text" class="form-control" id="mensaje" placeholder="Ingresa tu mensaje">    
                         </div>
                     </div>
@@ -76,5 +74,6 @@
         
     {{> footer }}
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script>
 </body>
 </html>

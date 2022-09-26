@@ -1,1 +1,57 @@
-[]
+[
+    {
+        "author": {
+            "id": "caro.cimini@gmail.com",
+            "nombre": "Carola",
+            "apellido": "Cimini",
+            "edad": 35,
+            "alias": "caro_cimi",
+            "avatar": "https://static.vecteezy.com/system/resources/previ…latin-woman-avatar-character-icon-free-vector.jpg"
+        },
+        "text": "probando"
+    },
+    {
+        "author": {
+            "id": "rami.cimini@gmail.com",
+            "nombre": "Ramiro",
+            "apellido": "Cimini",
+            "edad": 28,
+            "alias": "rama_cimi",
+            "avatar": "https://static.vecteezy.com/system/resources/previ…latin-woman-avatar-character-icon-free-vector.jpg"
+        },
+        "text": "hola, quiero saber formas de envio"
+    },
+    {
+        "author": {
+            "id": "monicalcoderch@gmail.com",
+            "nombre": "Monica",
+            "apellido": "Coderch",
+            "edad": 63,
+            "alias": "moni_coderch",
+            "avatar": "https://static.vecteezy.com/system/resources/previ…latin-woman-avatar-character-icon-free-vector.jpg"
+        },
+        "text": "hola, quiero realizar un cambio"
+    },
+    {
+        "author": {
+            "id": "nico.cimini@yahoo.com",
+            "nombre": "Nicolas",
+            "apellido": "Cimini",
+            "edad": 30,
+            "alias": "nicoCapi",
+            "avatar": "https://static.vecteezy.com/system/resources/previ…latin-woman-avatar-character-icon-free-vector.jpg"
+        },
+        "text": "hola, hacen venta mayorista"
+    },
+    {
+        "author": {
+            "id": "cesar.cimini@yahoo.com",
+            "nombre": "Cesar",
+            "apellido": "Cimini",
+            "edad": 70,
+            "alias": "CesarPlatica",
+            "avatar": "https://static.vecteezy.com/system/resources/previ…latin-woman-avatar-character-icon-free-vector.jpg"
+        },
+        "text": "hola, no puedo realizar pagos"
+    }
+]
